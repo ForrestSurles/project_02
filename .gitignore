@@ -6,3 +6,6 @@
 
 # VSCode settings
 .vscode
+
+# DS_Store (MacOS related files)
+.DS_Store
