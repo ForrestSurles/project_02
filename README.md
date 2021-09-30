@@ -80,3 +80,43 @@ ACTION ITEMS: Reconvene Wednesday (2021-09-29)
 		- Implementing Risk Tolerance selection into Trading Strategy
 	- Vish:
 		- Structure the outline for backtesting and training ML models		
+
+Project Proposal:
+
+	Group Name:
+
+		Group 1 - Intelligent Derivations Group
+
+	Project Title:
+
+		The CAT Project (CLI Algorithmic Trading)
+
+	Project Description:
+
+		Build a CLI app to optimize a user's potential portfolio
+		using neural network models to maximize portfolio profit.
+
+	Project Objective:
+
+		To create from start to finish a practical application
+		to thoroughly test historic stock data, and predict future
+		performance applying lessons learned throughout recent modules.
+
+	Research Questions to Answer:
+
+		Our primary question is to determine the optimal combination
+		and weightings of a user's input portfolio and capital
+		while respecting their risk tolerance.
+
+	Enter links or describe datasets to be used:
+
+		Our primary datasets will be the historic performance for the list
+		or a subset list of stocks provided by the user obtained via
+		API from services like Alpaca.
+
+	Rough Breakdown of tasks:
+
+		Forrest - Develop user stories and documentation
+		Vish    - Establish back-testing framework and outline deep learning models
+		John    - Implement risk tolerance and strategy selection logic
+		Ashley  - Create API connections and collect stock data
