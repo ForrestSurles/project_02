@@ -64,6 +64,10 @@ An example of what your outputs will look like with pyportfolioopt:
 
 ![usage1](https://user-images.githubusercontent.com/85652410/136723182-eb972e18-bf42-4a51-926e-81fc23a8b10a.PNG)
 
+Another usage example of the Max Sharpe output:
+![maxsharpe](https://user-images.githubusercontent.com/85652410/136731705-47df9e71-30e9-41ac-8bc0-0a1868711173.PNG)
+
+
 
 
 ---
