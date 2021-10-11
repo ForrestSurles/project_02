@@ -16,7 +16,7 @@
 
 ## Technologies
 
-The programming language for this project is Python. This project was run in VSCode with Jupyter Notebook extension. Additionally, we used Alpaca accounts in order to pull real time data for stocks. 
+The programming language for this project is Python. This project was run in VSCode with Jupyter Notebook extension. Additionally, we used Alpaca accounts in order to pull real time data for stocks. We implemented PyPortfolioOpt library that implements portfolio optimization strategies.
 
 
 
@@ -37,6 +37,7 @@ pip install requests
 pip install pyportfolioopt
 pip install classification_report
 ```
+Futher installation instructions for PyPortfolioOpt can be found here: https://pyportfolioopt.readthedocs.io/en/latest/index.html
 
 ---
 
