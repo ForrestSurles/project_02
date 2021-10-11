@@ -35,6 +35,7 @@ pip install csv
 pip install matplotlib.pyplot
 pip install requests
 pip install pyportfolioopt
+pip install classification_report
 ```
 
 ---
