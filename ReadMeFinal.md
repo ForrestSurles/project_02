@@ -41,6 +41,10 @@ pip install questionary
 ```
 User will need to launch cli.py in order to launch the portfolio optimization application.
 
+
+The following steps are required to be followed to make the PyPortfolioOpt package work:
+  Install C++ on your computer from Visual Studio
+  pip install pyportfolioopt
 Futher installation instructions for PyPortfolioOpt can be found here: https://pyportfolioopt.readthedocs.io/en/latest/index.html
 
 ---
