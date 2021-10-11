@@ -39,6 +39,8 @@ pip install classification_report
 pip install fire
 pip install questionary
 ```
+User will need to launch cli.py in order to launch the portfolio optimization application.
+
 Futher installation instructions for PyPortfolioOpt can be found here: https://pyportfolioopt.readthedocs.io/en/latest/index.html
 
 ---
