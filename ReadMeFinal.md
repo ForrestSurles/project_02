@@ -34,7 +34,7 @@ pip install alpaca_trade_api
 pip install csv
 pip install matplotlib.pyplot
 pip install requests
-pip install pyPortfolioOpt
+pip install pyportfolioOpt
 ```
 
 ---
