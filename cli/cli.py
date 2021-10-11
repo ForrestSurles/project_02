@@ -56,9 +56,10 @@ def portfolio_modeler():
     # respond to user input
     if menu_prompt['main_menu'] == function_list[-1] \
         and menu_prompt['are_u_suuure']:
-        
+
         print('Have a good day.\nNow Exiting...')
         exit()    
+
     elif menu_prompt['main_menu'] == 'Input Portfolio':
         portfolio_tickers = []
         for ticker in menu_prompt['portfolio_input'].splitlines():
