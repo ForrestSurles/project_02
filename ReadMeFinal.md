@@ -36,6 +36,8 @@ pip install matplotlib.pyplot
 pip install requests
 pip install pyportfolioopt
 pip install classification_report
+pip install fire
+pip install questionary
 ```
 Futher installation instructions for PyPortfolioOpt can be found here: https://pyportfolioopt.readthedocs.io/en/latest/index.html
 
