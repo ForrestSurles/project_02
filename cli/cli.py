@@ -3,22 +3,29 @@
 """
 
 import fire
-import questionary as quest
+from questionary
 
 def portfolio_modeler():
+    questions = [
+        {
+            'type': 'confirm',
+            'name': 'no_user_input',
+            'message': 'No input was recognized. Please try again.',
+            'default': True
+        },
+        {
+            'type': 'text',
+            'name': 'user_name',
+            'message': 'Please enter your name, and then press [Enter].',
+            # validate user input
+            'when': lambda x: x['no_user_input'],
+            # only accept non-empty string
+            'validate': lambda val: val != ''
+        }
+    ]
 
-    # start the app
-    user_name = quest.text(
-        'Please enter your name, and then press [Enter].'
-    ).ask()
-    #user_name response
-    name_response = 'No name was recognized. Please ReLaunch the app.'
+        # Welcome the user, or indicate no name provided
 
-    if user_name != '':
-        name_response = name_response = f'Welcome, {user_name}.'
-
-    # Welcome the user, or indicate no name provided
-    print(name_response)
 
 if __name__ == '__main__':
     fire.Fire(portfolio_modeler())
