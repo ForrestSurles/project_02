@@ -42,7 +42,7 @@ pip install PyPortfolioOpt
 ## Examples
 
 What the cleaned full calendar year of closing prices for chosen stocks will look like.
-![calendar_yr_closing_prices](file:///C:/Users/Vivian/Desktop/Calendar%20Yr%20Closing%20Prices.png)
+![calendar_yr_closing_prices](file:///C:/Users/Vivian/Desktop/Calendar%20Yr%20Closing%20Prices.png)!
 
 
 ---
