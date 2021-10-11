@@ -43,7 +43,8 @@ pip install classification_report
 ## Examples
 
 What the cleaned full calendar year of closing prices for chosen stocks will look like.
-![calendar_yr_closing_prices](C:\Users\Vivian\Desktop\Calendar Yr Closing Prices Properties)
+![Calendar Yr Closing Prices](https://user-images.githubusercontent.com/85652410/136720277-535ac9c8-7bd1-4387-a6a1-a580780ce352.png)
+
 
 
 ---
