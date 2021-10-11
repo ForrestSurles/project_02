@@ -9,7 +9,7 @@
 ####
 
 ####
-#### Our business case is creating a practical application to test historic stock data and predict future performance applying lessons learned throughout the course.
+#### Our business case is creating a practical application to test historic stock data and predict future performance applying lessons learned throughout the course. Our primary question is to determine the optimal combination and weightings of a user's input portfolio and capital while respecting their risk tolerance.
 ####
 #### Stocks chosen for this project are the following: AMAT, AMD, BHP, DDD, F, FCX, INTC, MSFT, NVDA, QCOM, RIO, TSLA, TSM, and VALE. VOO was used as a control in our project to compare the results of our model to VOO.
 ---
