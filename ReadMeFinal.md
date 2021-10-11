@@ -67,8 +67,11 @@ An example of what your outputs will look like with pyportfolioopt:
 Another usage example of the Max Sharpe output:
 ![maxsharpe](https://user-images.githubusercontent.com/85652410/136731705-47df9e71-30e9-41ac-8bc0-0a1868711173.PNG)
 
+---
 
+## Project Results
 
+The Efficient Risk approach provides an example of how the optimizer tool can be used to generate an acceptable performance of the portfolio by fixing Risk. The portfolio itself can be changed to introduce less volatile stocks to provide more control over performance of the optimizer tool by giving it a wider range of stocks to pick from. In the Min. Volatility case the optimizer tool placed 99% of the cash allocation to the VOO ( Vanguard Index Fund) which supports the fact that a mixed portfolio of stocks & lower risk assets can be used to move the volatility lower & optimize returns.
 
 ---
 
