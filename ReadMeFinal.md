@@ -52,7 +52,7 @@ What the cleaned full calendar year of closing prices for chosen stocks will loo
 
 ## Usage
 
-An example of what your outputs could look like:
+An example of what your outputs will look like with pyportfolioopt:
 
 ![usage1](https://user-images.githubusercontent.com/85652410/136723182-eb972e18-bf42-4a51-926e-81fc23a8b10a.PNG)
 
