@@ -4,10 +4,18 @@
 
 import fire
 from questionary import text, prompt, Separator
+from Portfolio_final import portfolio_final
 
 user_fail_msg = 'No input was recognized. Please try again.'
+default_portfolio = [
+    "TSM", "QCOM", "VALE", "AMD", "BHP",
+    "RIO", "FCX", "INTC", "MSFT", "DDD",
+    "NVDA", "TSLA", "AMAT", "F", "VOO"
+]
 
 def portfolio_modeler():
+
+    portfolio_tickers= []
 
     # list of functions for main menu prompt
     function_list = [
@@ -34,48 +42,51 @@ def portfolio_modeler():
         exit()
 
     options = [
-        {
-            'type': 'select',
-            'name': 'main_menu',
-            'message': 'What would you like to do?',
-            'choices': function_list,
-        },
-        {
+         {
             'type': 'text',
             'name': 'portfolio_input',
             'message': 'Enter the portfolio tickers',
             'multiline': True,
-            'instruction': \
-                'one ticker per line, press [Escape] then [Enter] to finish.'
+        },{
+            'type': 'select',
+            'name': 'main_menu',
+            'message': 'What would you like to do?',
+            'choices': function_list,
         }
     ]
 
-    # call the menu
-    menu_prompt = prompt(options)
+    confirm_exit = 'N'
 
-    # respond to user input
-    if menu_prompt['main_menu'] == function_list[-1] \
-        and menu_prompt['are_u_suuure']:
+    while confirm_exit != 'Y':
 
-        print('Have a good day.\nNow Exiting...')
-        exit()    
+        # call the menu
+        menu_prompt = prompt(options[1])
 
-    elif menu_prompt['main_menu'] == 'Input Portfolio':
-        portfolio_tickers = []
-        for ticker in menu_prompt['portfolio_input'].splitlines():
-            portfolio_tickers.append(ticker)
-        print(f'List of Tickers:\n{portfolio_tickers}')
-   elif menu_prompt['main_menu'] == 'Run Model':
+        # respond to user input
+        if menu_prompt['main_menu'] == function_list[-1]:
+            confirm_exit = text('Are you sure you would like to exit? (Y/n)').ask()
 
-    else:
-        menu_prompt = prompt(options)
-    # input portfolio
+        elif menu_prompt['main_menu'] == 'Input Portfolio':
+            menu_prompt = prompt(options[0])
+            portfolio_tickers = menu_prompt['portfolio_input'].splitlines()
+            print(f'List of Tickers:\n{portfolio_tickers}')
 
-    # require portfolio to run model
-    # option to redirect to portfolio if none when run model/ if not, menu
+        elif menu_prompt['main_menu'] == 'Run Model':
+            print('now running, please wait...')
+            if len(portfolio_tickers) == 0:
+                portfolio_final(tickers=default_portfolio)
+            else:
+                portfolio_final(tickers=portfolio_tickers)
+            print('model complete.')
+        else:
+            menu_prompt = prompt(options)
+        
+        if confirm_exit == 'Y':
+            print('Have a good day.\nNow Exiting')
+            exit()
 
-    exit()
-
+def main():
+    fire.Fire(portfolio_modeler())
 
 if __name__ == '__main__':
-    fire.Fire(portfolio_modeler())
+    main()
